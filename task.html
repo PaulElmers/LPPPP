@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Інформація про подію</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .event-info {
+            flex: 1;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #04a35c;
+            border-radius: 8px;
+        }
+        h1, h2 {
+            margin-top: 0;
+        }
+        p {
+            margin-top: 0;
+        }
+        img {
+            max-width: 30%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 8px;
+        }
+        @media screen and (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+            .event-info {
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="event-info">
+            <h1>Назва події</h1>
+            <img src="icons_hw/account.png" alt="Зображення">
+            <p>Дата: 01.04.2024</p>
+            <p>Місце: Київ, Україна</p>
+            <p>Опис події: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis neque sed nisi lacinia tempor sit amet a felis. Vivamus volutpat est eget mauris sodales, non vulputate lacus malesuada.</p>
+        </div>
+        <div class="event-info">
+            <h2>Програма</h2>
+            <p>10:00 - 10:30: Реєстрація</p>
+            <p>10:30 - 11:00: Привітання та вступне слово</p>
+            <p>11:00 - 12:30: Перша сесія доповідей</p>
+            <p>12:30 - 14:00: Обід</p>
+            <p>14:00 - 15:30: Друга сесія доповідей</p>
+            <p>15:30 - 16:00: Кава та час для спілкування</p>
+        </div>
+    </div>
+</body>
+</html>
